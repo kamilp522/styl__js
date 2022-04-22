@@ -1797,6 +1797,7 @@ FOOTER
   padding-bottom: 0.1875em;
   display: flex;
   font-weight: 700;
+  width: max-content;
 }
 
 .website-rights {
