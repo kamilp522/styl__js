@@ -1053,13 +1053,13 @@ GALLERY SECTION
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1500px) {
   .gallery-section-container {
     min-height: 100vh;
   }
 }
 
-@media (min-width: 2000px) and (min-height: 864px) {
+@media (min-width: 1800px) and (min-height: 864px) {
   .gallery-section-container {
     min-height: 65rem;
   }
