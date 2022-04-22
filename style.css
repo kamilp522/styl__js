@@ -111,7 +111,7 @@ NAVBAR
 */
 
 .navbar-main {
-  background: #0d0d0d;
+  background: transparent;
   height: 72px;
   margin-top: -72px;
   width: 100%;
@@ -206,6 +206,11 @@ NAVBAR
   padding: 0 4rem;
   height: 100%;
   cursor: pointer;
+}
+
+.nav-item a.active {
+  background-color: #7e1506;
+  transition: 0.2s ease-in-out;
 }
 
 @media (min-width: 1200px) {
@@ -1004,12 +1009,6 @@ GALLERY SECTION
   min-height: 45rem;
 }
 
-@media (min-width: 1000px) {
-  .gallery-section-container {
-    min-height: 100vh;
-  }
-}
-
 @media (max-height: 450px) {
   .gallery-section-container {
     min-height: 45rem;
@@ -1044,6 +1043,12 @@ GALLERY SECTION
 @media (min-height: 840px) {
   .gallery-section-container {
     min-height: 53rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .gallery-section-container {
+    min-height: 100vh;
   }
 }
 
