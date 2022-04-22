@@ -45,14 +45,14 @@ SIDEBAR
   padding: 1em;
 }
 
-.sidebar-icon i {
-  font-size: 1.75rem;
+.sidebar-icon-close {
   color: white;
+  width: 1.75rem;
 }
 
 @media (min-height: 700px) {
-  .sidebar-icon i {
-    font-size: 2.25rem;
+  .sidebar-icon-close {
+    width: 2.25rem;
   }
 }
 
@@ -159,9 +159,7 @@ NAVBAR
     right: -3.75rem;
     padding: 1.375rem;
     transform: translate(-100%, 60%);
-    font-size: 1.75rem;
     cursor: pointer;
-    color: white;
     z-index: 10;
   }
 }
@@ -169,13 +167,22 @@ NAVBAR
 @media (min-height: 700px) and (orientation: portrait) {
   .mobile-icon {
     top: -3.5rem;
-    font-size: 2.125rem;
   }
 }
 
 @media (min-height: 800px) and (orientation: portrait) {
   .mobile-icon {
     right: -4rem;
+  }
+}
+
+.mobile-icon-menu {
+  width: 1.75rem;
+}
+
+@media (min-height: 700px) and (orientation: portrait) {
+  .mobile-icon-menu {
+    width: 2.125rem;
   }
 }
 
@@ -1789,15 +1796,15 @@ FOOTER
 }
 
 .footer-logo {
+  width: 185px;
+  display: block;
   color: white;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.575rem;
   padding-bottom: 0.1875em;
-  display: flex;
   font-weight: 700;
-  width: max-content;
 }
 
 .website-rights {
