@@ -858,6 +858,8 @@ const makeImagesClickable = (slides) => {
   }
 };
 
+////////////////////////////////////////////////////
+
 makeImagesClickable(GalleryData__Fireplaces);
 
 nav_fireplaces.addEventListener(
@@ -868,26 +870,3 @@ nav_awards.addEventListener(
   "click",
   makeImagesClickable.bind(this, GalleryData__Awards)
 );
-
-// images.forEach((image, index) => {
-//   image.addEventListener("click", getImageModal.bind(this, index));
-// });
-
-//////////////////////////////////////////////
-
-// const nextSlide = (e) => {
-//     e.preventDefault();
-//     const current_image = document.querySelector(".gallery-modal-image");
-//     const src_string = current_image.getAttribute("src");
-
-//     number = +src_string.replace(/^\D+/g, "").replace(".jpg", "");
-//     number++;
-
-//     if (number < 10) number = `0${number}`;
-
-//     current_image.setAttribute("src", src_string.replace(/[0-9]+/, `${number}`));
-
-//     console.log(src_string);
-//     console.log(number);
-//     console.log(src_string.replace(/[0-9]+/, `${number}`));
-//   };

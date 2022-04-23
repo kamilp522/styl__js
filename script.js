@@ -1,3 +1,17 @@
+//====================================================
+
+//  VARIABLES
+
+//====================================================
+
+const sidebar = document.querySelector(".sidebar-container");
+const sidebar_menu = document.querySelector(".mobile-icon");
+const sidebar_close = document.querySelector(".sidebar-icon");
+const sidebar_about_item = document.querySelector(".about-sidebar-link");
+const sidebar_services_item = document.querySelector(".services-sidebar-link");
+const sidebar_gallery_item = document.querySelector(".gallery-sidebar-link");
+const sidebar_contact_item = document.querySelector(".contact-sidebar-link");
+
 const nav = document.querySelector(".navbar-main");
 const nav_about_item = document.querySelector(".about-nav-item");
 const nav_services_item = document.querySelector(".services-nav-item");
@@ -30,6 +44,22 @@ let contact_height =
   gallery_section.offsetHeight +
   contact.offsetHeight -
   72;
+
+//====================================================
+
+//  FUNCTIONS
+
+//====================================================
+
+const openSidebarMenu = (e) => {
+  e.preventDefault();
+  sidebar.classList.add("active");
+};
+
+const closeSidebarMenu = (e) => {
+  e.preventDefault();
+  sidebar.classList.remove("active");
+};
 
 const changeNav = () => {
   if (window.scrollY >= 80) {
@@ -92,33 +122,45 @@ const goToSection = (e) => {
     });
   }
 
-  if (e.target.classList.contains("about-nav-item")) {
+  if (
+    e.target.classList.contains("about-nav-item") ||
+    e.target.classList.contains("about-sidebar-link")
+  ) {
     window.scrollTo({
-      top: hero_height,
+      top: hero_height + 2,
       left: 0,
       behavior: "smooth",
     });
   }
 
-  if (e.target.classList.contains("services-nav-item")) {
+  if (
+    e.target.classList.contains("services-nav-item") ||
+    e.target.classList.contains("services-sidebar-link")
+  ) {
     window.scrollTo({
-      top: about_height,
+      top: about_height + 2,
       left: 0,
       behavior: "smooth",
     });
   }
 
-  if (e.target.classList.contains("gallery-nav-item")) {
+  if (
+    e.target.classList.contains("gallery-nav-item") ||
+    e.target.classList.contains("gallery-sidebar-link")
+  ) {
     window.scrollTo({
-      top: services_height,
+      top: services_height + 2,
       left: 0,
       behavior: "smooth",
     });
   }
 
-  if (e.target.classList.contains("contact-nav-item")) {
+  if (
+    e.target.classList.contains("contact-nav-item") ||
+    e.target.classList.contains("contact-sidebar-link")
+  ) {
     window.scrollTo({
-      top: gallery_section_height,
+      top: gallery_section_height + 2,
       left: 0,
       behavior: "smooth",
     });
@@ -153,19 +195,40 @@ const registerResize = () => {
     72;
 };
 
+//====================================================
+
+//  EVENTS
+
+//====================================================
+
 //registerResize();
-setTimeout(registerResize, 500);
+setTimeout(registerResize, 250);
 changeNav();
 changeNavItemColor();
 
 window.addEventListener("resize", registerResize);
 document.addEventListener("scroll", changeNav);
 document.addEventListener("scroll", changeNavItemColor);
+
+sidebar_menu.addEventListener("click", openSidebarMenu);
+sidebar_close.addEventListener("click", closeSidebarMenu);
+
+sidebar_about_item.addEventListener("click", goToSection);
+sidebar_services_item.addEventListener("click", goToSection);
+sidebar_gallery_item.addEventListener("click", goToSection);
+sidebar_contact_item.addEventListener("click", goToSection);
+
+sidebar_about_item.addEventListener("click", closeSidebarMenu);
+sidebar_services_item.addEventListener("click", closeSidebarMenu);
+sidebar_gallery_item.addEventListener("click", closeSidebarMenu);
+sidebar_contact_item.addEventListener("click", closeSidebarMenu);
+
 nav_logo.addEventListener("click", goToSection);
 nav_about_item.addEventListener("click", goToSection);
 nav_services_item.addEventListener("click", goToSection);
 nav_gallery_item.addEventListener("click", goToSection);
 nav_contact_item.addEventListener("click", goToSection);
+
 footer_logo.addEventListener("click", goToSection);
 
 //console.log(hero_height + about_height);

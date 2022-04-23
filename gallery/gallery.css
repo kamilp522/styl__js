@@ -45,12 +45,16 @@ GALLERY MODAL
 
 .gallery-modal-image-wrapper {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
 
 .gallery-modal-image {
   max-height: 95%;
+  max-width: 95%;
   width: auto;
   display: block;
   border-radius: 10%;
@@ -313,6 +317,7 @@ GALLERY NAV
   text-decoration: none;
   word-break: keep-all;
   margin-right: 0.5rem;
+  user-select: none;
 }
 
 .nav-menu {
@@ -323,7 +328,7 @@ GALLERY NAV
   margin-left: 0.6125rem;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .nav-menu {
     flex-direction: column;
   }
@@ -440,6 +445,7 @@ FOOTER
   font-size: 1.575rem;
   padding-bottom: 0.1875em;
   font-weight: 700;
+  user-select: none;
 }
 
 .website-rights {
