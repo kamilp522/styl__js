@@ -275,11 +275,13 @@ GALLERY MODAL
 
 /*
 =========================================
-GALLERY NAV
+GALLERY NAVBAR
 =========================================
 */
 
 .gallery-nav {
+  position: -webkit-sticky;
+  position: sticky;
   background: #0d0d0d;
   height: 4rem;
   margin-top: -4rem;
@@ -288,8 +290,8 @@ GALLERY NAV
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
   top: 0;
+  width: 100%;
   z-index: 10;
   transition: 0.5s ease-in-out;
   color: white;
@@ -337,6 +339,12 @@ GALLERY NAV
 .nav-item {
   height: 64px;
   user-select: none;
+}
+
+@media (max-width: 480px) {
+  .nav-item {
+    height: 32px;
+  }
 }
 
 .nav-link-fireplaces,
@@ -450,4 +458,17 @@ FOOTER
 
 .website-rights {
   color: white;
+}
+
+.documents {
+  position: absolute;
+  bottom: 22px;
+  right: 18px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.documents:hover {
+  color: #7e1506;
 }
