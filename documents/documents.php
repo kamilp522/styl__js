@@ -2,8 +2,8 @@
 <html lang="pl-PL">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./images/icons/fireplace__icon.png" />
-    <link rel="apple-touch-icon" href="./images/icons/fireplace__icon.png" />
+    <link rel="icon" href="../images/icons/fireplace__icon.png" />
+    <link rel="apple-touch-icon" href="../images/icons/fireplace__icon.png" />
 
     <!--Fireplace icon by Icons8-->
     <!--Video in the the hero section by Mikhail Nilov: https://www.pexels.com/video/cold-relaxing-winter-photography-6507518/-->
@@ -45,7 +45,16 @@
         color: rgb(73, 100, 255);
         text-decoration: none;
         font-weight: 600;
+        background-color: #0d0d0d;
       }
+
+      @media (max-width: 800px) {
+        .go-back {
+          right: 5%;
+          left: 5%;
+        }
+      }
+
 
       a {
         color: rgb(73, 100, 255);
@@ -60,25 +69,31 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin-top: 15px;
+        padding: 0 15px
       }
 
-      @media (max-width: 450px) {
+      @media (max-width: 800px) {
         div {
-          margin-top: 40px;
+          margin-top: 100px;
         }
       }
 
       div a {
-        padding: 4px 0;
+        padding: 2px 0;
         letter-spacing: 0.5px;
         text-decoration: none;
         transition: 0.2s ease;
       }
 
-      div a:hover {
-        color: rgb(255, 52, 52);
-        font-size: 17.5px;
+      @media (min-width: 1000px) {
+        div a:hover {
+          color: rgb(255, 52, 52);
+          font-size: 17.5px;
+       }
       }
+
+
     </style>
   </head>
 
@@ -87,55 +102,16 @@
 
     <div>
     <?php
-    // $files = array_slice(scandir('./pdf'), 2);
+    $files = array_slice(scandir('./pdf'), 2);
 
-    // for ($i = 0; $i <= (count($files)); $i++) {
-    //     $path = "./pdf/" . $files[$i];
-    //     $out2 = '     <a href=' . $path . '>' . $files[$i] . '</a><br>';
-    //     echo $out2;
-    // }
+    for ($i = 0; $i <= (count($files)); $i++) {
+        $path = "./pdf/" . $files[$i];
+        $out2 = '     <a target="_blank" href=' . $path . '>' . $files[$i] . '</a><br>';
+        echo $out2;
+    }
 
-    echo "content";
     ?>
 </div>
   </body>
 </html>
 
-<!-- <div>
-  <a href="./pdf/Belka-Kominkowa-Luk.pdf" target="blank"
-    >Belka-Kominkowa-Luk.pdf</a
-  >
-  <a href="./pdf/Belka-Kominkowa-Skosna.pdf" target="blank"
-    >Belka-Kominkowa-Skosna.pdf</a
-  >
-  <a href="./pdf/Belka-Kominkowa-Prosta.pdf" target="blank"
-    >Belka-Kominkowa-Prosta.pdf</a
-  >
-  <a href="./pdf/Biokominek-Narozny-Zamowienie.pdf" target="blank"
-    >Biokominek-Narozny-Zamowienie.pdf</a
-  >
-  <a href="./pdf/Biokominek-Prosty-Zamowienie.pdf" target="blank"
-    >Biokominek-Prosty-Zamowienie.pdf</a
-  >
-  <a href="./pdf/Broszura-Watts.pdf" target="blank">Broszura-Watts.pdf</a>
-  <a href="./pdf/Belka-Kominkowa-Prosta.pdf" target="blank"
-    >Belka-Kominkowa-Prosta.pdf</a
-  >
-  <a href="./pdf/Cennik-Detaliczny-od-01.05.2017r.pdf" target="blank"
-    >Cennik-Detaliczny-od-01.05.2017r.pdf</a
-  >
-  <a
-    href="./pdf/Deklaracja-Osiagnietych-Wynikow-Poczas-Badania-PL_KOZA_AB.pdf"
-    target="blank"
-    >Deklaracja-Osiagnietych-Wynikow-Poczas-Badania-PL_KOZA_AB.pdf</a
-  >
-  <a href="./pdf/Belka-Kominkowa-Prosta.pdf" target="blank"
-    >Belka-Kominkowa-Prosta.pdf</a
-  >
-  <a href="./pdf/Belka-Kominkowa-Prosta.pdf" target="blank"
-    >Belka-Kominkowa-Prosta.pdf</a
-  >
-  <a href="./pdf/Belka-Kominkowa-Prosta.pdf" target="blank"
-    >Belka-Kominkowa-Prosta.pdf</a
-  >
-</div> -->

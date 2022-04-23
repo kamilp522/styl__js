@@ -1,0 +1,3 @@
+AddHandler application/x-httpd-php53 php
+php_value register_long_arrays on
+php_value memory_limit 256M

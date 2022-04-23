@@ -104,9 +104,11 @@ SIDEBAR
   cursor: pointer;
 }
 
-.sidebar-menu a:hover {
-  transition: all 0.2s;
-  color: #7e1506;
+@media (min-width: 1000px) {
+  .sidebar-menu a:hover {
+    transition: all 0.2s;
+    color: #7e1506;
+  }
 }
 
 /*
