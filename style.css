@@ -24,7 +24,7 @@ SIDEBAR
   display: grid;
   align-items: center;
   left: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
   opacity: 0;
   top: -100%;
 }
@@ -98,7 +98,7 @@ SIDEBAR
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease;
   text-decoration: none;
   color: white;
   cursor: pointer;
@@ -122,7 +122,7 @@ NAVBAR
   position: sticky;
   top: 0;
   z-index: 10;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .navbar-container {
@@ -217,7 +217,7 @@ NAVBAR
 
 .nav-item a.active {
   background-color: #7e1506;
-  transition: 0.2s ease-in-out;
+  transition: 0.2s ease;
 }
 
 @media (min-width: 1200px) {
@@ -979,7 +979,7 @@ SERVICES SECTION
   margin: 1rem 0;
   padding: 1.875em;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
 }
 
 @media (min-width: 600px) {
@@ -1262,12 +1262,12 @@ GALLERY SECTION
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
   font-weight: 500;
 }
 
 .btn-wrap a:hover {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s;
   background: white;
 }
 
