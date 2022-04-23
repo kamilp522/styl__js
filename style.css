@@ -50,12 +50,12 @@ SIDEBAR
 
 .sidebar-icon-close {
   color: white;
-  width: 1.75rem;
+  width: 2.125rem;
 }
 
 @media (min-height: 700px) {
   .sidebar-icon-close {
-    width: 2.25rem;
+    width: 2.625rem;
   }
 }
 
@@ -68,6 +68,7 @@ SIDEBAR
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 5.25rem);
   text-align: center;
+  user-select: none;
 }
 
 @media (min-height: 700px) {
@@ -105,6 +106,7 @@ SIDEBAR
   text-decoration: none;
   color: white;
   cursor: pointer;
+  user-select: none;
 }
 
 @media (min-width: 1000px) {
@@ -1844,4 +1846,11 @@ FOOTER
 
 .documents:hover {
   color: #7e1506;
+}
+
+@media (max-width: 1000px) {
+  .documents {
+    right: 28px;
+    font-size: 0.9125rem;
+  }
 }
