@@ -25,14 +25,12 @@ SIDEBAR
   background: #0d0d0d;
   display: grid;
   align-items: center;
+  transition: 0.5s cubic-bezier(0.2, 0.05, 0.05, 0.1);
+  top: -200%;
   left: 0;
-  transition: 0.3s ease;
-  /* opacity: 0; */
-  top: -150%;
 }
 
 .sidebar-container.active {
-  /* opacity: 100%; */
   top: 0;
 }
 
@@ -360,7 +358,7 @@ HERO SECTION
 .hero-h1 {
   color: white;
   font-size: 2rem;
-  line-height: 3.5rem;
+  line-height: 3.4rem;
   padding: 0 1.5rem;
   text-align: center;
   font-weight: 400;
@@ -371,7 +369,7 @@ HERO SECTION
 @media (min-width: 1000px) {
   .hero-h1 {
     font-size: 2.25rem;
-    line-height: 3.9125rem;
+    line-height: 3.8rem;
   }
 }
 
@@ -379,7 +377,7 @@ HERO SECTION
   .hero-h1 {
     max-width: 380px;
     font-size: 2.5rem;
-    line-height: 4.25rem;
+    line-height: 4.125rem;
   }
 }
 
@@ -387,7 +385,7 @@ HERO SECTION
   .hero-h1 {
     max-width: 420px;
     font-size: 3rem;
-    line-height: 5rem;
+    line-height: 4.85rem;
   }
 }
 
@@ -395,33 +393,33 @@ HERO SECTION
   .hero-h1 {
     max-width: 480px;
     font-size: 3.5rem;
-    line-height: 5.75rem;
+    line-height: 5.5rem;
   }
 }
 
 @media (orientation: landscape) and (max-width: 1000px) {
   .hero-h1 {
     font-size: 1.75rem;
-    line-height: 2.75rem;
+    line-height: 2.625rem;
     text-align: left;
   }
 }
 
 @media (min-height: 700px) and (orientation: portrait) {
   .hero-h1 {
-    line-height: 4.125rem;
+    line-height: 3.75rem;
   }
 }
 
 @media (min-height: 800px) and (orientation: portrait) {
   .hero-h1 {
-    line-height: 4.5rem;
+    line-height: 4.25rem;
   }
 }
 
 @media (min-height: 900px) and (orientation: portrait) {
   .hero-h1 {
-    line-height: 4.75rem;
+    line-height: 4.5rem;
   }
 }
 
@@ -450,6 +448,8 @@ HERO SECTION
   transform: translate(-50%, -50%);
   z-index: 20;
   text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.25px;
 }
 
 @media (min-width: 1000px) {
@@ -470,14 +470,15 @@ HERO SECTION
   padding: 0.75rem 2rem;
   margin-bottom: 1rem;
   border: none;
-  background-color: #7e1606;
+  background-color: #971400;
   color: #fff;
   font-size: 18px;
   border-radius: 10px;
+
   outline: none;
   white-space: nowrap;
   text-decoration: none;
-  border: 1px solid #fff8;
+  /* border: 1px solid #fff8; */
 }
 
 @media (max-width: 1000px) {

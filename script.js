@@ -64,10 +64,8 @@ const closeSidebarMenu = (e) => {
 const changeNav = () => {
   if (window.scrollY >= 80) {
     nav.style.backgroundColor = "#0d0d0d";
-    localStorage.setItem("nav-color", "#0d0d0d");
   } else {
     nav.style.backgroundColor = "transparent";
-    localStorage.setItem("nav-color", "transparent");
   }
 };
 

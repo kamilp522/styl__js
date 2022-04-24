@@ -716,10 +716,12 @@ const changeNavColor = (e) => {
   e.target.classList.add("active");
 
   if (e.target.classList.contains("nav-link-fireplaces")) {
+    localStorage.setItem("current-photos", "fireplaces");
     nav_awards.classList.remove("active");
   }
 
   if (e.target.classList.contains("nav-link-awards")) {
+    localStorage.setItem("current-photos", "awards");
     nav_fireplaces.classList.remove("active");
   }
 };
@@ -815,7 +817,20 @@ const prevSlide = (e) => {
 
 /////////////////////////////////////////////
 
-appendImages(GalleryData__Fireplaces__Downsized);
+if (localStorage.getItem("current-photos") === null)
+  appendImages(GalleryData__Fireplaces__Downsized);
+
+if (localStorage.getItem("current-photos") === "fireplaces") {
+  appendImages(GalleryData__Fireplaces__Downsized);
+  nav_awards.classList.remove("active");
+  nav_fireplaces.classList.add("active");
+}
+
+if (localStorage.getItem("current-photos") === "awards") {
+  appendImages(GalleryData__Awards__Downsized);
+  nav_fireplaces.classList.remove("active");
+  nav_awards.classList.add("active");
+}
 
 ////////////////////////////////////////////
 

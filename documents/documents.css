@@ -23,13 +23,6 @@ body {
   background-color: #0d0d0d;
 }
 
-/* @media (min-width: 1000px) {
-  .go-back-wrapper {
-    color: rgb(255, 52, 52);
-    font-size: 17.5px;
-  }
-} */
-
 .go-back {
   width: 100%;
   font-size: 30px;
@@ -38,12 +31,10 @@ body {
   font-weight: 600;
 }
 
-a {
-  color: rgb(73, 100, 255);
-}
-
-a:hover {
-  color: rgb(255, 52, 52);
+@media (min-width: 1000px) {
+  .go-back:hover {
+    color: white;
+  }
 }
 
 .pdf-wrapper {
@@ -56,6 +47,7 @@ a:hover {
 }
 
 .pdf-wrapper a {
+  color: rgb(73, 100, 255);
   padding: 2px 0;
   letter-spacing: 0.5px;
   text-decoration: none;
