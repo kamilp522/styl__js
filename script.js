@@ -27,17 +27,17 @@ const services = document.getElementById("services");
 const gallery_section = document.getElementById("gallery-section");
 const contact = document.getElementById("contact");
 
-let hero_height = hero.offsetHeight - 72;
-let about_height = hero.offsetHeight + about.offsetHeight - 72;
-let services_height =
+let hero_lenght = hero.offsetHeight - 72;
+let about_lenght = hero.offsetHeight + about.offsetHeight - 72;
+let services_lenght =
   hero.offsetHeight + about.offsetHeight + services.offsetHeight - 72;
-let gallery_section_height =
+let gallery_section_lenght =
   hero.offsetHeight +
   about.offsetHeight +
   services.offsetHeight +
   gallery_section.offsetHeight -
   72;
-let contact_height =
+let contact_lenght =
   hero.offsetHeight +
   about.offsetHeight +
   services.offsetHeight +
@@ -70,40 +70,40 @@ const changeNav = () => {
 };
 
 const changeNavItemColor = () => {
-  if (window.scrollY >= hero_height) {
+  if (window.scrollY >= hero_lenght) {
     nav_about_item.classList.add("active");
   }
 
-  if (window.scrollY > about_height - 1 || window.scrollY < hero_height) {
+  if (window.scrollY > about_lenght - 1 || window.scrollY < hero_lenght) {
     nav_about_item.classList.remove("active");
   }
 
-  if (window.scrollY >= about_height) {
+  if (window.scrollY >= about_lenght) {
     nav_services_item.classList.add("active");
   }
 
-  if (window.scrollY > services_height - 1 || window.scrollY < about_height) {
+  if (window.scrollY > services_lenght - 1 || window.scrollY < about_lenght) {
     nav_services_item.classList.remove("active");
   }
 
-  if (window.scrollY >= services_height) {
+  if (window.scrollY >= services_lenght) {
     nav_gallery_item.classList.add("active");
   }
 
   if (
-    window.scrollY > gallery_section_height - 1 ||
-    window.scrollY < services_height
+    window.scrollY > gallery_section_lenght - 1 ||
+    window.scrollY < services_lenght
   ) {
     nav_gallery_item.classList.remove("active");
   }
 
-  if (window.scrollY >= gallery_section_height) {
+  if (window.scrollY >= gallery_section_lenght) {
     nav_contact_item.classList.add("active");
   }
 
   if (
-    window.scrollY > contact_height - 1 ||
-    window.scrollY < gallery_section_height
+    window.scrollY > contact_lenght - 1 ||
+    window.scrollY < gallery_section_lenght
   ) {
     nav_contact_item.classList.remove("active");
   }
@@ -125,7 +125,7 @@ const goToSection = (e) => {
     e.target.classList.contains("about-sidebar-link")
   ) {
     window.scrollTo({
-      top: hero_height + 2,
+      top: hero_lenght + 2,
       left: 0,
       behavior: "smooth",
     });
@@ -136,7 +136,7 @@ const goToSection = (e) => {
     e.target.classList.contains("services-sidebar-link")
   ) {
     window.scrollTo({
-      top: about_height + 2,
+      top: about_lenght + 2,
       left: 0,
       behavior: "smooth",
     });
@@ -147,7 +147,7 @@ const goToSection = (e) => {
     e.target.classList.contains("gallery-sidebar-link")
   ) {
     window.scrollTo({
-      top: services_height + 2,
+      top: services_lenght + 2,
       left: 0,
       behavior: "smooth",
     });
@@ -158,7 +158,7 @@ const goToSection = (e) => {
     e.target.classList.contains("contact-sidebar-link")
   ) {
     window.scrollTo({
-      top: gallery_section_height + 2,
+      top: gallery_section_lenght + 2,
       left: 0,
       behavior: "smooth",
     });
@@ -174,17 +174,17 @@ const goToSection = (e) => {
 };
 
 const registerResize = () => {
-  hero_height = hero.offsetHeight - 72;
-  about_height = hero.offsetHeight + about.offsetHeight - 72;
-  services_height =
+  hero_lenght = hero.offsetHeight - 72;
+  about_lenght = hero.offsetHeight + about.offsetHeight - 72;
+  services_lenght =
     hero.offsetHeight + about.offsetHeight + services.offsetHeight - 72;
-  gallery_section_height =
+  gallery_section_lenght =
     hero.offsetHeight +
     about.offsetHeight +
     services.offsetHeight +
     gallery_section.offsetHeight -
     72;
-  contact_height =
+  contact_lenght =
     hero.offsetHeight +
     about.offsetHeight +
     services.offsetHeight +
@@ -229,4 +229,4 @@ nav_contact_item.addEventListener("click", goToSection);
 
 footer_logo.addEventListener("click", goToSection);
 
-//console.log(hero_height + about_height);
+//console.log(hero_lenght + about_lenght);
