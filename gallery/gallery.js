@@ -726,8 +726,8 @@ const changeNavColor = (e) => {
   }
 };
 
-const getImageModal = (i, slides) => {
-  gallery_modal.classList.add("active");
+const getImageModal = (i, slides, state) => {
+  gallery_modal.classList.add(state);
   gallery_modal_image_wrapper.removeChild(
     gallery_modal_image_wrapper.lastChild
   );
@@ -740,7 +740,7 @@ const getImageModal = (i, slides) => {
 
   gallery_modal_image_wrapper.appendChild(gallery_modal_image);
 
-  length = slides.length;
+  //length = slides.length;
 };
 
 const closeModal = (e) => {
@@ -750,7 +750,7 @@ const closeModal = (e) => {
 
 const nextSlide = (e) => {
   e.preventDefault();
-  let length;
+  //let length;
 
   if (nav_fireplaces.classList.contains("active"))
     length = GalleryData__Fireplaces.length;
@@ -779,7 +779,7 @@ const nextSlide = (e) => {
 
 const prevSlide = (e) => {
   e.preventDefault();
-  let length;
+  // let length;
 
   if (nav_fireplaces.classList.contains("active"))
     length = GalleryData__Fireplaces.length;
@@ -867,21 +867,36 @@ gallery_bar_left.addEventListener("click", nextSlide);
 
 let images = document.getElementsByClassName("image-wrapper");
 
-const makeImagesClickable = (slides) => {
+const makeImagesClickable = (slides, state) => {
   for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener("click", getImageModal.bind(this, i, slides));
+    images[i].addEventListener(
+      "click",
+      getImageModal.bind(this, i, slides, state)
+    );
   }
 };
 
 ////////////////////////////////////////////////////
 
-makeImagesClickable(GalleryData__Fireplaces);
+makeImagesClickable(GalleryData__Fireplaces, "active");
 
 nav_fireplaces.addEventListener(
   "click",
-  makeImagesClickable.bind(this, GalleryData__Fireplaces)
+  makeImagesClickable.bind(this, GalleryData__Fireplaces, "active")
 );
 nav_awards.addEventListener(
   "click",
-  makeImagesClickable.bind(this, GalleryData__Awards)
+  makeImagesClickable.bind(this, GalleryData__Awards, "active")
 );
+
+/////////////////////////////////////////////
+
+if (localStorage.getItem("current-photos") === "fireplaces") {
+  makeImagesClickable(GalleryData__Fireplaces, "active");
+}
+
+if (localStorage.getItem("current-photos") === "awards") {
+  makeImagesClickable(GalleryData__Awards, "active");
+}
+
+/////////////////////////////////////////////

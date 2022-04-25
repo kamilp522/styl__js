@@ -347,6 +347,12 @@ GALLERY NAVBAR
   }
 }
 
+@media (min-width: 1200px) {
+  .nav-item {
+    font-size: 1.25rem;
+  }
+}
+
 .nav-link-fireplaces,
 .nav-link-awards {
   display: block;
@@ -365,6 +371,13 @@ GALLERY NAVBAR
 .nav-link-awards.active {
   background-color: #7e1506;
   transition: 0.2s ease;
+}
+
+@media (min-width: 1200px) {
+  .nav-link-fireplaces,
+  .nav-link-awards {
+    padding: 0 2.125rem;
+  }
 }
 
 /*
