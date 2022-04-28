@@ -861,7 +861,7 @@ gallery_bar_right.addEventListener("click", nextSlide);
 //////////////////////////////////////////////
 
 gallery_modal_arrow_left.addEventListener("click", prevSlide);
-gallery_bar_left.addEventListener("click", nextSlide);
+gallery_bar_left.addEventListener("click", prevSlide);
 
 //////////////////////////////////////////////
 

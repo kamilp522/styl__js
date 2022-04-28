@@ -238,6 +238,13 @@ NAVBAR
   transition: 0.2s ease;
 }
 
+@media (min-width: 1000px) {
+  .nav-item :not(a.active):hover {
+    color: #b63e0a;
+    transition: 0.15s ease;
+  }
+}
+
 @media (min-width: 1200px) {
   .nav-item a {
     font-size: 1.125rem;
@@ -1843,6 +1850,7 @@ FOOTER
   color: white;
   cursor: pointer;
   text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
 .documents:hover {
@@ -1854,8 +1862,4 @@ FOOTER
     right: 28px;
     font-size: 0.9125rem;
   }
-}
-
-.documents-2 {
-  font-size: 0;
 }

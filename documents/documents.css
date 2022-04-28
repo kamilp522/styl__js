@@ -33,7 +33,7 @@ body {
 
 @media (min-width: 1000px) {
   .go-back:hover {
-    color: white;
+    color: rgba(255, 255, 255, 0.61);
   }
 }
 
@@ -48,11 +48,11 @@ body {
 
 .pdf-wrapper a {
   color: rgb(73, 100, 255);
-  padding: 2px 0;
-  letter-spacing: 0.5px;
+  padding: 6px 4px;
+  letter-spacing: 0.75px;
   text-decoration: none;
   transition: 0.2s ease;
-  line-height: 18px;
+  line-height: 22px;
 }
 
 @media (min-width: 1000px) {

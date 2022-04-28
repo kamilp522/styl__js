@@ -373,6 +373,14 @@ GALLERY NAVBAR
   transition: 0.2s ease;
 }
 
+@media (min-width: 1000px) {
+  .nav-link-fireplaces:not(.active):hover,
+  .nav-link-awards:not(.active):hover {
+    color: #b63e0a;
+    transition: 0.15s ease;
+  }
+}
+
 @media (min-width: 1200px) {
   .nav-link-fireplaces,
   .nav-link-awards {
@@ -481,6 +489,7 @@ FOOTER
   color: white;
   cursor: pointer;
   text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
 .documents:hover {
