@@ -25,13 +25,15 @@ SIDEBAR
   background: #0d0d0d;
   display: grid;
   align-items: center;
-  transition: 0.5s cubic-bezier(0.2, 0.05, 0.05, 0.1);
-  top: -200%;
+  transition: 0.2s ease-in-out;
+  top: -100%;
+  opacity: 0;
   left: 0;
 }
 
 .sidebar-container.active {
   top: 0;
+  opacity: 1;
 }
 
 .sidebar-icon {

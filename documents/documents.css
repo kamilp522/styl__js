@@ -33,7 +33,7 @@ body {
 
 @media (min-width: 1000px) {
   .go-back:hover {
-    color: rgba(255, 255, 255, 0.61);
+    color: rgb(201, 42, 42);
   }
 }
 

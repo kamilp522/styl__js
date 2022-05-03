@@ -291,4 +291,4 @@ footer_logo.addEventListener("click", goToSection);
 website_rigths.textContent = `Copyright © Styl-Art-Kom ${new Date().getFullYear()}`;
 
 setTimeout(registerResize, 250);
-setInterval(registerResize, 3000);
+setInterval(registerResize, 1000);
