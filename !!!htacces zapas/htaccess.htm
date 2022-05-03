@@ -1,0 +1,11 @@
+AddHandler application/x-httpd-php53 
+php php_value register_long_arrays on
+php_value memory_limit 256M 
+
+RewriteEngine On
+RewriteCond %{HTTPS} on
+RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^kominkipokojowe.pl$ RewriteRule^(.*)$ http://kominkipokojowe.pl/$1 [R=301,L]
+
+RewriteCond %{QUERY_STRING} ^page\=galeria$ RewriteRule ^index\.php$ http://kominkipokojowe.pl/gallery/gallery.html? [R=301,L]

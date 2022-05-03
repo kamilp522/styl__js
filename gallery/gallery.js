@@ -688,6 +688,8 @@ const gallery_modal_arrow_left = document.querySelector(
   ".gallery-modal-arrow-left"
 );
 
+const website_rigths = document.querySelector(".website-rights");
+
 //====================================================
 
 //  FUNCTIONS
@@ -900,3 +902,7 @@ if (localStorage.getItem("current-photos") === "awards") {
 }
 
 /////////////////////////////////////////////
+
+website_rigths.textContent = `Copyright © Styl-Art-Kom ${new Date().getFullYear()}`;
+
+///////////////////////////////////////////

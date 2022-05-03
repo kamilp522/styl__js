@@ -77,6 +77,7 @@ const nav_contact_item = document.querySelector(".contact-nav-item");
 const nav_logo = document.querySelector(".nav-logo");
 
 const footer_logo = document.querySelector(".footer-logo");
+const website_rigths = document.querySelector(".website-rights");
 
 const hero = document.querySelector(".hero-container");
 const about = document.getElementById("about");
@@ -287,9 +288,7 @@ nav_gallery_item.addEventListener("click", goToSection);
 nav_contact_item.addEventListener("click", goToSection);
 
 footer_logo.addEventListener("click", goToSection);
+website_rigths.textContent = `Copyright © Styl-Art-Kom ${new Date().getFullYear()}`;
 
-setTimeout(registerResize, 5);
 setTimeout(registerResize, 250);
-setTimeout(registerResize, 500);
-setTimeout(registerResize, 1000);
-setTimeout(registerResize, 3000);
+setInterval(registerResize, 3000);

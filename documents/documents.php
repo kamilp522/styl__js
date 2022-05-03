@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="../images/icons/fireplace__icon.png" />
     <link rel="apple-touch-icon" href="../images/icons/fireplace__icon.png" />
-    <link rel="canonical" href="kominkipokojowe.pl/documents/documents.php" />
+    <link rel="canonical" href="htpps://kominkipokojowe.pl/documents/documents.php" />
 
     <!--Fireplace icon by Icons8-->
     <!--Video in the the hero section by Mikhail Nilov: https://www.pexels.com/video/cold-relaxing-winter-photography-6507518/-->
