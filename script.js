@@ -259,8 +259,6 @@ const registerResize = () => {
 
 //====================================================
 
-//registerResize();
-
 changeNav();
 changeNavItemColor();
 
@@ -290,5 +288,4 @@ nav_contact_item.addEventListener("click", goToSection);
 footer_logo.addEventListener("click", goToSection);
 website_rigths.textContent = `Copyright © Styl-Art-Kom ${new Date().getFullYear()}`;
 
-setTimeout(registerResize, 250);
-setInterval(registerResize, 1000);
+setInterval(registerResize, 100);
