@@ -642,7 +642,7 @@ ABOUT SECTION
 
 @media (min-width: 1400px) {
   .about-column-1 {
-    max-width: 28rem;
+    max-width: 24.5rem;
     border-bottom: 2px solid #fbf8a6;
   }
 }
@@ -672,7 +672,7 @@ ABOUT SECTION
 
 @media (min-width: 1366px) {
   .about-column-2 {
-    max-width: 550px;
+    max-width: 600px;
   }
 }
 
@@ -711,7 +711,7 @@ ABOUT SECTION
     flex: 1 1 50%;
     margin-left: 2.5rem;
     border-bottom: 2px solid #fbf8a6;
-    align-self: flex-start;
+    align-self: center;
   }
 }
 
