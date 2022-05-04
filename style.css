@@ -1859,6 +1859,13 @@ FOOTER
   color: #7e1506;
 }
 
+@media (max-width: 500px) {
+  .documents {
+    right: 28px;
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .documents {
     right: 28px;
