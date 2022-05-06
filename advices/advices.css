@@ -195,6 +195,12 @@ ADVICES SECTION
   }
 }
 
+@media (orientation: landscape) and (max-width: 1366px) {
+  .advices-container {
+    min-height: 120vh;
+  }
+}
+
 @media (orientation: landscape) and (max-width: 1000px) {
   .advices-container {
     min-height: 150vh;

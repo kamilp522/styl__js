@@ -434,6 +434,7 @@ GALLERY
 .image-wrapper img {
   width: 100%;
   padding: 0.25rem;
+  border-radius: 18px;
   /* max-width: 200px; */
   cursor: pointer;
 }

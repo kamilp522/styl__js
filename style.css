@@ -131,7 +131,7 @@ NAVBAR
   position: sticky;
   background: transparent;
   height: 72px;
-  margin-top: -73px;
+  margin-top: -74px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -229,7 +229,6 @@ NAVBAR
 .nav-item a {
   display: block;
   color: white;
-  color: #b63e0a
   display: flex;
   align-items: center;
   text-decoration: none;
