@@ -185,7 +185,7 @@ ADVICES SECTION
 
 @media (orientation: portrait) and (max-width: 400px) {
   .advices-container {
-    min-height: 125vh;
+    min-height: 135vh;
   }
 }
 

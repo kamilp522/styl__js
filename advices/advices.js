@@ -18,21 +18,3 @@ website_rigths.textContent = `Copyright © Styl-Art-Kom ${new Date().getFullYear
 
 document.addEventListener("scroll", changeNav);
 document.addEventListener("resize", registerContainerHeight);
-
-registerContainerHeight();
-
-// setInterval(registerContainerHeight, 100);
-
-// if (screen.orientation) {
-//   screen.orientation.addEventListener("change", registerContainerHeight);
-// }
-
-// document.addEventListener("change", registerContainerHeight);
-
-// setInterval(registerContainerHeight, 100);
-
-// const registerContainerHeight = () => {
-//   if (advices_length <= 800 || window_width <= 1000)
-//     advices_container.style.minHeight = `${advices_length + 80}px`;
-//   else advices_container.style.minHeight = "120vh";
-// };

@@ -109,18 +109,6 @@ GALLERY MODAL
 
 @media (min-height: 700px) and (orientation: portrait) {
   .close-icon {
-    width: 2.75rem;
-  }
-}
-
-@media (min-height: 700px) and (orientation: portrait) {
-  .close-icon {
-    width: 3.2rem;
-  }
-}
-
-@media (min-height: 700px) and (orientation: portrait) {
-  .close-icon {
     width: 3rem;
   }
 }
@@ -325,66 +313,6 @@ GALLERY NAVBAR
   margin-right: 0.5rem;
   user-select: none;
 }
-/* 
-.nav-menu {
-  display: flex;
-  align-items: flex-start;
-  list-style: none;
-  text-align: left;
-  margin-left: 0.6125rem;
-}
-
-@media (max-width: 480px) {
-  .nav-menu {
-    flex-direction: column;
-  }
-}
-
-.nav-item {
-  height: 64px;
-  user-select: none;
-}
-
-@media (max-width: 480px) {
-  .nav-item {
-    height: 32px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .nav-item {
-    font-size: 1.25rem;
-  }
-}
-
-.nav-link {
-  display: block;
-  color: white;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1.425rem;
-  height: 100%;
-  cursor: pointer;
-  background-color: #0d0d0d;
-  user-select: none;
-}
-
-.nav-link.active {
-  background-color: #7e1506;
-  transition: 0.2s ease;
-}
-
-.nav-link:not(.active):hover {
-  color: #b63e0a;
-  transition: 0.15s ease;
-}
-
-@media (min-width: 1200px) {
-  .nav-link {
-    padding: 0 2.125rem;
-  }
-} */
 
 /*
 =========================================
@@ -412,13 +340,13 @@ GALLERY
 
 @media (min-width: 600px) {
   .gallery-wrapper {
-    grid-template-columns: repeat(auto-fill, 190px);
+    grid-template-columns: repeat(auto-fill, 200px);
   }
 }
 
 @media (min-width: 1200px) {
   .gallery-wrapper {
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, 240px);
   }
 }
 

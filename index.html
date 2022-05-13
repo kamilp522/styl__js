@@ -25,288 +25,278 @@
   </head>
 
   <body>
-    <div class="website">
-      <aside class="sidebar-container">
-        <div class="sidebar-icon">
+    <aside class="sidebar-container">
+      <div class="sidebar-icon">
+        <img
+          class="sidebar-icon-close"
+          src="./images/icons/times.png"
+          alt="zamknij/close"
+        />
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="sidebar-menu">
+          <a class="about-sidebar-link">O nas</a>
+          <a class="services-sidebar-link">Usługi</a>
+          <a class="gallery-sidebar-link">Galeria</a>
+          <a class="contact-sidebar-link">Kontakt</a>
+        </ul>
+      </div>
+    </aside>
+    <nav class="navbar-main">
+      <div class="navbar-container">
+        <a class="nav-logo">Styl-Art-Kom</a>
+        <div class="mobile-icon">
           <img
-            class="sidebar-icon-close"
-            src="./images/icons/times.png"
-            alt="zamknij/close"
+            class="mobile-icon-menu"
+            src="./images/icons/bars.png"
+            alt="menu"
           />
         </div>
-        <div class="sidebar-wrapper">
-          <ul class="sidebar-menu">
-            <a class="about-sidebar-link">O nas</a>
-            <a class="services-sidebar-link">Usługi</a>
-            <a class="gallery-sidebar-link">Galeria</a>
-            <a class="contact-sidebar-link">Kontakt</a>
-          </ul>
-        </div>
-      </aside>
-      <nav class="navbar-main">
-        <div class="navbar-container">
-          <a class="nav-logo">Styl-Art-Kom</a>
-          <div class="mobile-icon">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="about-nav-item">Nasza firma</a>
+          </li>
+          <li class="nav-item">
+            <a class="services-nav-item">Usługi</a>
+          </li>
+          <li class="nav-item">
+            <a class="gallery-nav-item">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="contact-nav-item">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero-container">
+      <div class="hero-bg">
+        <video
+          poster="./images/backgrounds/hero__background.jpg"
+          src="./videos/fireplace__solow.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="auto"
+          src="{Video}"
+          type="video/mp4"
+          class="video-bg"
+        ></video>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-h1">KOMINKI NAJWYŻSZEJ JAKOŚCI DLA TWOJEGO DOMU</h1>
+      </div>
+      <div class="hero-phone-wrapper">
+        <a href="tel:+48604453748" class="hero-phone"
+          >Zadzwoń:&nbsp&nbsp&nbsp604 453 748</a
+        >
+      </div>
+    </section>
+    <section class="about-container" id="about">
+      <div class="about-wrapper">
+        <div class="about-row">
+          <div class="about-column-1">
+            <div class="about-text-wrapper">
+              <h2 class="about-h2">Nasza firma</h2>
+              <p class="about-p">
+                Już od ponad 30 lat działamy na terenie Krosna i okolic. Przez
+                te wszystkie lata zaufały nam tysiące klientów a gwarantem
+                najwyższej jakości świadczonych przez nas usług są ich pozytywne
+                opinie. Oprócz tego mamy też na swoim koncie dziesiątki nagród
+                branżowych i wyróżnień.
+              </p>
+            </div>
+          </div>
+          <div class="about-column-2">
             <img
-              class="mobile-icon-menu"
-              src="./images/icons/bars.png"
-              alt="menu"
+              src="./images/photos/building__front.jpg"
+              alt="kominki_krosno_budynek"
+              loading="lazy"
             />
           </div>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a class="about-nav-item">Nasza firma</a>
-            </li>
-            <li class="nav-item">
-              <a class="services-nav-item">Usługi</a>
-            </li>
-            <li class="nav-item">
-              <a class="gallery-nav-item">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="contact-nav-item">Kontakt</a>
-            </li>
-          </ul>
+          <div class="about-column-3">
+            <img
+              src="./images/photos/building__side.jpg"
+              alt="kominki_krosno_budynek"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-column-4">
+            <div class="about-text-wrapper">
+              <p class="about-p">
+                Wykonujemy kominki na podstawie naszego albo dostarczonego nam
+                projektu, zawsze zgodnie z obowiązującym prawem budowlanym.
+                Przyjdź do naszego sklepu albo umów się telefonicznie na darmową
+                konsultację w swoim domu, a przekonasz się o najwyższej jakości
+                świadczonych przez nas usług.
+              </p>
+            </div>
+          </div>
+          <div class="about-column-5">
+            <div class="about-text-wrapper">
+              <p class="about-p">
+                Pomagamy w wyborze wkładu i organizujemy sprzedaż na cały świat.
+                Nasza działalność wykracza nie tylko poza granice powiatu, ale
+                także całego kraju. Nasze kominki można spotkać w wielu
+                miejscach na całym świecie, między innymi w USA, Czechach,
+                Niemczech, Słowacji, Austrii, Francji, Hiszpanii, Szwajcarii,
+                Ukrainie, Węgrzech i wielu innych.
+              </p>
+            </div>
+          </div>
+          <div class="about-column-6">
+            <img
+              src="./images/photos/building__inside.jpg"
+              alt="kominki_krosno_budynek"
+              loading="lazy"
+            />
+          </div>
         </div>
-      </nav>
-      <section class="hero-container">
-        <div class="hero-bg">
-          <video
-            poster="./images/backgrounds/hero__background.jpg"
-            src="./videos/fireplace__solow.mp4"
-            autoplay
-            loop
-            muted
-            playsinline
-            preload="auto"
-            src="{Video}"
-            type="video/mp4"
-            class="video-bg"
-          ></video>
+      </div>
+    </section>
+    <section class="services-container" id="services">
+      <div class="services-wrapper">
+        <h2 class="services-h2">Usługi</h2>
+        <p class="services-p">
+          Zajmujemy się kompleksowo wszystkim, co związane z kominkami
+          pokojowymi. Głównie montażem wkładów, wykonaniem właściwej izolacji i
+          obudowy, zgodnie z życzeniem klienta. Współpracujemy z najlepszymi
+          producentami w branży, dzięki czemu mamy dostęp do szerokiej gamy
+          obudów i wszelkiego rodzaju fabrykatów związanych z wykonaniem
+          kominka.
+        </p>
+        <h3 class="services-h3">Poznaj ofertę naszych producentów:</h3>
+        <div class="services-cards-wrapper">
+          <a href="https://defrohome.pl/" class="services-card" target="_blank">
+            <img
+              src="./images/logos/defro__logo.png"
+              alt="defro__logo"
+              class="services-icon"
+            />
+          </a>
+          <a
+            href="https://kratki.com/pl/ogrzewanie-domu/kominki"
+            class="services-card"
+            target="_blank"
+          >
+            <img
+              src="./images/logos/kratki__logo.png"
+              alt="kratki__logo"
+              class="services-icon"
+            />
+          </a>
         </div>
-        <div class="hero-content">
-          <h1 class="hero-h1">KOMINKI NAJWYŻSZEJ JAKOŚCI DLA TWOJEGO DOMU</h1>
+        <h3 class="services-h3">
+          Zapytaj w naszym sklepie o specjalne promocje, w tym 10 lat gwarancji!
+        </h3>
+      </div>
+    </section>
+    <section class="gallery-section-container" id="gallery-section">
+      <div class="gallery-section-wrapper">
+        <div class="gallery-section-row">
+          <div class="gallery-section-column-1">
+            <div class="gallery-section-text-wrapper">
+              <h2 class="gallery-section-h2">Galeria</h2>
+              <p class="gallery-section-p">
+                Przed każdym zakupem należy zapoznać się z produktem lub usługą,
+                którą chce się nabyć oraz podmiotem, z którym chcemy w tym celu
+                współpracować. Właśnie z tego powodu mamy przygotowaną galerię
+                zdjęć przedstawiających nasze kominki oraz przyznane nam na
+                przestrzeni wielu lat wyróżnienia.
+              </p>
+              <div class="btn-wrap">
+                <a href="/gallery/gallery.html">Przejdź do galerii</a>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-section-column-2">
+            <div class="inside-gallery-wrapper">
+              <img
+                src="./images/kominki__downsized/kominek__56.jpg"
+                alt="kominki_krosno"
+                loading="lazy"
+              />
+              <img
+                src="./images/kominki__downsized/kominek__10.jpg"
+                alt="kominki_krosno"
+                loading="lazy"
+              />
+              <img
+                src="./images/kominki__downsized/kominek__58.jpg"
+                alt="kominki_krosno"
+                loading="lazy"
+              />
+              <img
+                src="./images/kominki__downsized/kominek__01.jpg"
+                alt="kominki_krosno"
+                loading="lazy"
+              />
+              <img
+                src="./images/kominki__downsized/kominek__02.jpg"
+                alt="kominki_krosno"
+                loading="lazy"
+              />
+              <img
+                src="./images/kominki__downsized/kominek__04.jpg"
+                alt="kominki_krosno"
+                loading="lazy"
+              />
+              <img
+                src="./images/kominki__downsized/kominek__36.jpg"
+                alt="kominki_krosno"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
-        <div class="hero-phone-wrapper">
-          <a href="tel:+48604453748" class="hero-phone"
-            >Zadzwoń:&nbsp&nbsp&nbsp604 453 748</a
+      </div>
+    </section>
+    <section class="contact-container" id="contact">
+      <div class="contact-wrapper">
+        <div class="contact-row">
+          <div class="contact-column-1">
+            <h2 class="contact-h2">Kontakt</h2>
+            <div class="contact-text-wrapper">
+              <h4 class="contact-phone">Telefon:&nbsp604&nbsp453&nbsp748</h4>
+              <h4 class="contact-mail">
+                Email: kominki@kominkipokojowe.pl
+                styloweartykulykominkowe@gmail.com
+              </h4>
+              <h4 class="contact-address">
+                Adres: ul. Feliksa Czajkowskiego 26, 38-400 Krosno
+              </h4>
+            </div>
+          </div>
+          <div class="contact-column-2">
+            <div class="g-map-wrap">
+              <iframe
+                class="g-map"
+                src="https://google.com/maps/embed?pb=!1m14!1m8!1m3!1d2581.0875022067407!2d21.761416000000004!3d49.690324999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaaddebeea6d8d787!2sStyl-Art-Kom%2C%20Kominki%20Pokojowe!5e0!3m2!1spl!2spl!4v1646831181203!5m2!1spl!2spl"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-container">
+      <div class="footer-wrap">
+        <div class="footer-logo-wrap">
+          <a class="footer-logo">Styl-Art-Kom</a>
+          <small class="website-rights"></small>
+        </div>
+        <div class="footer-links-wrap">
+          <a href="./advices/advices.html" class="advices">Porady</a>
+          <a href="./old_gallery/old_gallery.php" class="old-gallery"
+            >Archiwum zdjęć</a
+          >
+          <a href="./documents/documents.php" target="_blank" class="documents"
+            >Dokumenty</a
           >
         </div>
-      </section>
-      <section class="about-container" id="about">
-        <div class="about-wrapper">
-          <div class="about-row">
-            <div class="about-column-1">
-              <div class="about-text-wrapper">
-                <h2 class="about-h2">Nasza firma</h2>
-                <p class="about-p">
-                  Już od ponad 30 lat działamy na terenie Krosna i okolic. Przez
-                  te wszystkie lata zaufały nam tysiące klientów a gwarantem
-                  najwyższej jakości świadczonych przez nas usług są ich
-                  pozytywne opinie. Oprócz tego mamy też na swoim koncie
-                  dziesiątki nagród branżowych i wyróżnień.
-                </p>
-              </div>
-            </div>
-            <div class="about-column-2">
-              <img
-                src="./images/photos/building__front.jpg"
-                alt="kominki_krosno_budynek"
-                loading="lazy"
-              />
-            </div>
-            <div class="about-column-3">
-              <img
-                src="./images/photos/building__side.jpg"
-                alt="kominki_krosno_budynek"
-                loading="lazy"
-              />
-            </div>
-            <div class="about-column-4">
-              <div class="about-text-wrapper">
-                <p class="about-p">
-                  Wykonujemy kominki na podstawie naszego albo dostarczonego nam
-                  projektu, zawsze zgodnie z obowiązującym prawem budowlanym.
-                  Przyjdź do naszego sklepu albo umów się telefonicznie na
-                  darmową konsultację w swoim domu, a przekonasz się o
-                  najwyższej jakości świadczonych przez nas usług.
-                </p>
-              </div>
-            </div>
-            <div class="about-column-5">
-              <div class="about-text-wrapper">
-                <p class="about-p">
-                  Pomagamy w wyborze wkładu i organizujemy sprzedaż na cały
-                  świat. Nasza działalność wykracza nie tylko poza granice
-                  powiatu, ale także całego kraju. Nasze kominki można spotkać w
-                  wielu miejscach na całym świecie, między innymi w USA,
-                  Czechach, Niemczech, Słowacji, Austrii, Francji, Hiszpanii,
-                  Szwajcarii, Ukrainie, Węgrzech i wielu innych.
-                </p>
-              </div>
-            </div>
-            <div class="about-column-6">
-              <img
-                src="./images/photos/building__inside.jpg"
-                alt="kominki_krosno_budynek"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="services-container" id="services">
-        <div class="services-wrapper">
-          <h2 class="services-h2">Usługi</h2>
-          <p class="services-p">
-            Zajmujemy się kompleksowo wszystkim, co związane z kominkami
-            pokojowymi. Głównie montażem wkładów, wykonaniem właściwej izolacji
-            i obudowy, zgodnie z życzeniem klienta. Współpracujemy z najlepszymi
-            producentami w branży, dzięki czemu mamy dostęp do szerokiej gamy
-            obudów i wszelkiego rodzaju fabrykatów związanych z wykonaniem
-            kominka.
-          </p>
-          <h3 class="services-h3">Poznaj ofertę naszych producentów:</h3>
-          <div class="services-cards-wrapper">
-            <a
-              href="https://defrohome.pl/"
-              class="services-card"
-              target="_blank"
-            >
-              <img
-                src="./images/logos/defro__logo.png"
-                alt="defro__logo"
-                class="services-icon"
-              />
-            </a>
-            <a
-              href="https://kratki.com/pl/ogrzewanie-domu/kominki"
-              class="services-card"
-              target="_blank"
-            >
-              <img
-                src="./images/logos/kratki__logo.png"
-                alt="kratki__logo"
-                class="services-icon"
-              />
-            </a>
-          </div>
-          <h3 class="services-h3">
-            Zapytaj w naszym sklepie o specjalne promocje, w tym 10 lat
-            gwarancji!
-          </h3>
-        </div>
-      </section>
-      <section class="gallery-section-container" id="gallery-section">
-        <div class="gallery-section-wrapper">
-          <div class="gallery-section-row">
-            <div class="gallery-section-column-1">
-              <div class="gallery-section-text-wrapper">
-                <h2 class="gallery-section-h2">Galeria</h2>
-                <p class="gallery-section-p">
-                  Przed każdym zakupem należy zapoznać się z produktem lub
-                  usługą, którą chce się nabyć oraz podmiotem, z którym chcemy w
-                  tym celu współpracować. Właśnie z tego powodu mamy
-                  przygotowaną galerię zdjęć przedstawiających nasze kominki
-                  oraz przyznane nam na przestrzeni wielu lat wyróżnienia.
-                </p>
-                <div class="btn-wrap">
-                  <a href="/gallery/gallery.html">Przejdź do galerii</a>
-                </div>
-              </div>
-            </div>
-            <div class="gallery-section-column-2">
-              <div class="inside-gallery-wrapper">
-                <img
-                  src="./images/kominki__downsized/kominek__56.jpg"
-                  alt="kominki_krosno"
-                  loading="lazy"
-                />
-                <img
-                  src="./images/kominki__downsized/kominek__10.jpg"
-                  alt="kominki_krosno"
-                  loading="lazy"
-                />
-                <img
-                  src="./images/kominki__downsized/kominek__58.jpg"
-                  alt="kominki_krosno"
-                  loading="lazy"
-                />
-                <img
-                  src="./images/kominki__downsized/kominek__01.jpg"
-                  alt="kominki_krosno"
-                  loading="lazy"
-                />
-                <img
-                  src="./images/kominki__downsized/kominek__02.jpg"
-                  alt="kominki_krosno"
-                  loading="lazy"
-                />
-                <img
-                  src="./images/kominki__downsized/kominek__04.jpg"
-                  alt="kominki_krosno"
-                  loading="lazy"
-                />
-                <img
-                  src="./images/kominki__downsized/kominek__36.jpg"
-                  alt="kominki_krosno"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact-container" id="contact">
-        <div class="contact-wrapper">
-          <div class="contact-row">
-            <div class="contact-column-1">
-              <h2 class="contact-h2">Kontakt</h2>
-              <div class="contact-text-wrapper">
-                <h4 class="contact-phone">Telefon:&nbsp604&nbsp453&nbsp748</h4>
-                <h4 class="contact-mail">
-                  Email: kominki@kominkipokojowe.pl
-                  styloweartykulykominkowe@gmail.com
-                </h4>
-                <h4 class="contact-address">
-                  Adres: ul. Feliksa Czajkowskiego 26, 38-400 Krosno
-                </h4>
-              </div>
-            </div>
-            <div class="contact-column-2">
-              <div class="g-map-wrap">
-                <iframe
-                  class="g-map"
-                  src="https://google.com/maps/embed?pb=!1m14!1m8!1m3!1d2581.0875022067407!2d21.761416000000004!3d49.690324999999994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaaddebeea6d8d787!2sStyl-Art-Kom%2C%20Kominki%20Pokojowe!5e0!3m2!1spl!2spl!4v1646831181203!5m2!1spl!2spl"
-                  allowfullscreen=""
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="footer-container">
-        <div class="footer-wrap">
-          <div class="footer-logo-wrap">
-            <a class="footer-logo">Styl-Art-Kom</a>
-            <small class="website-rights"></small>
-          </div>
-          <div class="footer-links-wrap">
-            <a href="./advices/advices.html" class="advices">Porady</a>
-            <a href="./old_gallery/old_gallery.php" class="old-gallery"
-              >Archiwum zdjęć</a
-            >
-            <a
-              href="./documents/documents.php"
-              target="_blank"
-              class="documents"
-              >Dokumenty</a
-            >
-          </div>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

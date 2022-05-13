@@ -63,13 +63,16 @@ function enableScroll() {
 
 const sidebar = document.querySelector(".sidebar-container");
 const sidebar_menu = document.querySelector(".mobile-icon");
+// const sidebar_menu_square = document.querySelector(".mobile-icon-square");
 const sidebar_close = document.querySelector(".sidebar-icon");
+const sidebar_close_img = document.querySelector(".sidebar-icon-close");
 const sidebar_about_item = document.querySelector(".about-sidebar-link");
 const sidebar_services_item = document.querySelector(".services-sidebar-link");
 const sidebar_gallery_item = document.querySelector(".gallery-sidebar-link");
 const sidebar_contact_item = document.querySelector(".contact-sidebar-link");
 
 const nav = document.querySelector(".navbar-main");
+const nav_container = document.querySelector(".navbar-container");
 const nav_about_item = document.querySelector(".about-nav-item");
 const nav_services_item = document.querySelector(".services-nav-item");
 const nav_gallery_item = document.querySelector(".gallery-nav-item");
@@ -112,12 +115,14 @@ let contact_lenght =
 const openSidebarMenu = (e) => {
   e.preventDefault();
   sidebar.classList.add("active");
+  sidebar.style.zIndex = "999";
   disableScroll();
 };
 
 const closeSidebarMenu = (e) => {
   e.preventDefault();
   sidebar.classList.remove("active");
+  sidebar.style.zIndex = "997";
   enableScroll();
 };
 
@@ -267,7 +272,9 @@ document.addEventListener("scroll", changeNav);
 document.addEventListener("scroll", changeNavItemColor);
 
 sidebar_menu.addEventListener("click", openSidebarMenu);
+// sidebar_menu_square.addEventListener("click", openSidebarMenu);
 sidebar_close.addEventListener("click", closeSidebarMenu);
+sidebar_close_img.addEventListener("click", closeSidebarMenu);
 
 sidebar_about_item.addEventListener("click", goToSection);
 sidebar_services_item.addEventListener("click", goToSection);
@@ -289,3 +296,32 @@ footer_logo.addEventListener("click", goToSection);
 website_rigths.textContent = `Copyright © Styl-Art-Kom ${new Date().getFullYear()}`;
 
 setInterval(registerResize, 100);
+
+//=====================================
+
+// CHECKING IF THE BROWSER IS CHROME (IOS)
+
+//====================================
+
+// var winNav = window.navigator;
+// var isIOSChrome = winNav.userAgent.match("CriOS");
+// var window_width = window.matchMedia("(max-width: 768px)");
+
+// const browserChecker = () => {
+//   if (isIOSChrome) {
+//     //console.log("chrome on ios!!!");
+
+//     if (window_width.matches) {
+//       nav.style.height = "94px";
+//       nav.style.marginTop = "-95px";
+//       nav_container.style.transform = "translate(0, 15%)";
+//     } else {
+//       nav.style.height = "72px";
+//       nav.style.marginTop = "-65px";
+//       nav_container.style.transform = "translate(0, 0)";
+//     }
+//   }
+// };
+
+// browserChecker();
+// window.addEventListener("resize", browserChecker);

@@ -7,7 +7,7 @@
 const website_rigths = document.querySelector(".website-rights");
 const nav = document.querySelector(".gallery-nav");
 
-const photos = [...document.querySelectorAll(".image-wrapper")];
+const photos = [...document.querySelectorAll(".image-wrapper img")];
 
 const gallery_modal = document.querySelector(".gallery-modal");
 
