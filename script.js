@@ -63,7 +63,6 @@ function enableScroll() {
 
 const sidebar = document.querySelector(".sidebar-container");
 const sidebar_menu = document.querySelector(".mobile-icon");
-// const sidebar_menu_square = document.querySelector(".mobile-icon-square");
 const sidebar_close = document.querySelector(".sidebar-icon");
 const sidebar_close_img = document.querySelector(".sidebar-icon-close");
 const sidebar_about_item = document.querySelector(".about-sidebar-link");
@@ -87,6 +86,9 @@ const about = document.getElementById("about");
 const services = document.getElementById("services");
 const gallery_section = document.getElementById("gallery-section");
 const contact = document.getElementById("contact");
+
+const winNav = window.navigator;
+const isIOSChrome = winNav.userAgent.match("CriOS");
 
 let hero_lenght = hero.offsetHeight - 72;
 let about_lenght = hero.offsetHeight + about.offsetHeight - 72;
@@ -115,14 +117,14 @@ let contact_lenght =
 const openSidebarMenu = (e) => {
   e.preventDefault();
   sidebar.classList.add("active");
-  sidebar.style.zIndex = "999";
+  nav.style.display = "none";
   disableScroll();
 };
 
 const closeSidebarMenu = (e) => {
   e.preventDefault();
   sidebar.classList.remove("active");
-  sidebar.style.zIndex = "997";
+  nav.style.display = "flex";
   enableScroll();
 };
 
@@ -272,7 +274,6 @@ document.addEventListener("scroll", changeNav);
 document.addEventListener("scroll", changeNavItemColor);
 
 sidebar_menu.addEventListener("click", openSidebarMenu);
-// sidebar_menu_square.addEventListener("click", openSidebarMenu);
 sidebar_close.addEventListener("click", closeSidebarMenu);
 sidebar_close_img.addEventListener("click", closeSidebarMenu);
 
@@ -296,32 +297,3 @@ footer_logo.addEventListener("click", goToSection);
 website_rigths.textContent = `Copyright © Styl-Art-Kom ${new Date().getFullYear()}`;
 
 setInterval(registerResize, 100);
-
-//=====================================
-
-// CHECKING IF THE BROWSER IS CHROME (IOS)
-
-//====================================
-
-// var winNav = window.navigator;
-// var isIOSChrome = winNav.userAgent.match("CriOS");
-// var window_width = window.matchMedia("(max-width: 768px)");
-
-// const browserChecker = () => {
-//   if (isIOSChrome) {
-//     //console.log("chrome on ios!!!");
-
-//     if (window_width.matches) {
-//       nav.style.height = "94px";
-//       nav.style.marginTop = "-95px";
-//       nav_container.style.transform = "translate(0, 15%)";
-//     } else {
-//       nav.style.height = "72px";
-//       nav.style.marginTop = "-65px";
-//       nav_container.style.transform = "translate(0, 0)";
-//     }
-//   }
-// };
-
-// browserChecker();
-// window.addEventListener("resize", browserChecker);
