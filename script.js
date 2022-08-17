@@ -117,6 +117,9 @@ let contact_lenght =
 const openSidebarMenu = (e) => {
   e.preventDefault();
   sidebar.classList.add("active");
+  // there are problems with position: fixed/sticky on
+  // mobile chrome and safari, so we had to manipulate
+  // navbar visibility with java script
   nav.style.display = "none";
   disableScroll();
 };
@@ -129,7 +132,7 @@ const closeSidebarMenu = (e) => {
 };
 
 const changeNav = () => {
-  if (window.scrollY >= 80) {
+  if (window.scrollY >= 72) {
     nav.style.backgroundColor = "#0d0d0d";
   } else {
     nav.style.backgroundColor = "transparent";
@@ -265,6 +268,8 @@ const registerResize = () => {
 //  EVENTS
 
 //====================================================
+
+if (isIOSChrome) sidebar.style.zIndex = "997";
 
 changeNav();
 changeNavItemColor();

@@ -35,6 +35,8 @@ SIDEBAR
 
 @supports (-webkit-touch-callout: none) {
   /* TARGETS SAFARI AND CHROME ON IOS */
+  /* problems with fixed/sticky position
+  on mobile chrome and safari */
   .sidebar-container {
     z-index: 997;
   }
@@ -208,7 +210,6 @@ NAVBAR
   list-style: none;
   text-align: center;
   margin-right: -22px;
-  /* z-index: 11; */
 }
 
 @media (max-width: 768px) {
@@ -219,7 +220,6 @@ NAVBAR
 
 .nav-item {
   height: 72px;
-  /* z-index: 11; */
 }
 
 .nav-item a {
@@ -232,7 +232,6 @@ NAVBAR
   height: 100%;
   cursor: pointer;
   user-select: none;
-  /* z-index: 11; */
 }
 
 @media (min-width: 768px) {
@@ -308,8 +307,8 @@ HERO SECTION
   left: 0;
   background-color: rgba(0, 0, 0, 0.76);
   z-index: 1;
-  backdrop-filter: blur(0.48vw);
-  -webkit-backdrop-filter: blur(0.48vw);
+  backdrop-filter: blur(0.58vw);
+  -webkit-backdrop-filter: blur(0.58vw);
 }
 
 @media (orientation: portrait) {

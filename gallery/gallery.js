@@ -706,7 +706,7 @@ const appendImages = (slides) => {
     const image = document.createElement("img");
 
     image.setAttribute("src", slides[i].imageSrc);
-    image.setAttribute("alt", `zdjęcie__${i + 1}`);
+    image.setAttribute("alt", `kominkikrosno__${i + 1}`);
 
     image_gallery.appendChild(image_wrapper);
     image_wrapper.appendChild(image);
@@ -738,7 +738,7 @@ const getImageModal = (i, slides, state) => {
   gallery_modal_image.classList.add("gallery-modal-image");
 
   gallery_modal_image.setAttribute("src", slides[i].imageSrc);
-  gallery_modal_image.setAttribute("alt", `zdjęcie`);
+  gallery_modal_image.setAttribute("alt", `kominkikrosno`);
 
   gallery_modal_image_wrapper.appendChild(gallery_modal_image);
 
