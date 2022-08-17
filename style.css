@@ -1926,3 +1926,71 @@ FOOTER
 .advices {
   text-align: left;
 }
+
+/*
+=========================================
+CONSENT MODAL
+=========================================
+*/
+
+.consent-modal {
+  position: fixed;
+  z-index: 999;
+  color: white;
+  bottom: 1.5%;
+  width: 100%;
+  text-align: center;
+  transition: 0.5 ease-in-out;
+}
+
+.consent-modal.hidden {
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+@media (orientation: portrait) {
+  .consent-modal {
+    width: auto;
+    left: 10%;
+    right: 10%;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+}
+
+.consent-message {
+  background-color: rgba(15, 15, 15, 0.75);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5em 2.5em;
+  border-radius: 10px;
+}
+
+@media (orientation: portrait) {
+  .consent-message {
+    background-color: rgba(15, 15, 15, 0.97);
+    padding: 1em 2em 0.5em;
+  }
+}
+
+.consent-btn {
+  margin-left: 10px;
+  padding: 2px 4.5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #f7510a;
+}
+
+@media (orientation: portrait) {
+  .consent-btn {
+    margin: 10px;
+    padding: 3px 6px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .consent-btn:hover {
+    background-color: #fff;
+  }
+}
