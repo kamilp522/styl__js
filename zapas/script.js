@@ -1,53 +1,5 @@
 //====================================================
 
-//  COOKIE MODAL
-
-//====================================================
-
-const cookieStorage = {
-  getItem: (item) => {
-    const cookies = document.cookie
-      .split(";")
-      .map((cookie) => cookie.split("="))
-      .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
-    return cookies[item];
-  },
-  setItem: (item, value) => {
-    document.cookie = `${item}=${value};`;
-  },
-};
-
-const storageType = cookieStorage;
-const consentPropertyName = "styl_consent";
-const shouldShowModal = () => !storageType.getItem(consentPropertyName);
-const saveToStorage = () => storageType.setItem(consentPropertyName, true);
-
-window.onload = () => {
-  const consentModal = document.getElementsByClassName("consent-modal");
-  const consentBtn = document.getElementsByClassName("consent-btn");
-
-  const consentFn = () => {
-    saveToStorage(storageType);
-    consentModal[0].classList.add("hidden");
-    setTimeout(() => {
-      consentModal[0].style.display = "none";
-    }, 500);
-  };
-
-  consentBtn[0].addEventListener("click", consentFn);
-
-  if (!shouldShowModal(storageType)) {
-    setTimeout(() => {
-      consentModal[0].classList.add("hidden");
-    }, 500);
-    setTimeout(() => {
-      consentModal[0].style.display = "none";
-    }, 1000);
-  }
-};
-
-//====================================================
-
 //  DISABLING SCROLL DEMO
 
 //====================================================
