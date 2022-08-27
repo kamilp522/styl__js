@@ -1942,6 +1942,9 @@ CONSENT MODAL
   bottom: 1.5%;
   left: 15%;
   right: 15%;
+  max-width: 1000px;
+  margin: 0 auto;
+
   text-align: center;
   transition: 0.5 ease-in-out;
   display: flex;
@@ -1984,6 +1987,7 @@ CONSENT MODAL
 
 .consent-btn {
   padding: 0.125em 0.25em;
+  margin-right: 1em;
   border-radius: 5px;
   border: none;
   cursor: pointer;

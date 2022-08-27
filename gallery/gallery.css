@@ -551,3 +551,83 @@ FOOTER
 .advices {
   text-align: left;
 }
+
+/*
+=========================================
+CONSENT MODAL
+=========================================
+*/
+
+.consent-modal {
+  background-color: rgba(15, 15, 15, 0.75);
+  border-radius: 10px;
+  position: fixed;
+  z-index: 999;
+  color: white;
+  bottom: 1.5%;
+  left: 15%;
+  right: 15%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  text-align: center;
+  transition: 0.5 ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+.consent-modal.hidden {
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+@media (orientation: portrait) {
+  .consent-modal {
+    flex-direction: column;
+    background-color: rgba(15, 15, 15, 0.97);
+    width: auto;
+    bottom: 20%;
+    transform: translateY(50%);
+  }
+}
+
+.consent-message {
+  width: fit-content;
+  padding: 0.5em 1.5em;
+}
+
+@media (orientation: portrait) {
+  .consent-message {
+    padding: 1em 2em 0.5em;
+  }
+}
+
+.consent-btn-wrapper {
+  display: inline-block;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.consent-btn {
+  padding: 0.125em 0.25em;
+  margin-right: 1em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #f7510a;
+}
+
+@media (orientation: portrait) {
+  .consent-btn {
+    margin: 0.25em 0 0.75em;
+    padding: 0.25em 0.375em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .consent-btn:hover {
+    background-color: #fff;
+  }
+}
