@@ -1741,14 +1741,20 @@ CONTACT SECTION
 
 .contact-mail {
   font-weight: 400;
-  font-size: 0.9125rem;
+  font-size: 0.9rem;
   line-height: 1.375rem;
   letter-spacing: 0.25px;
 }
 
+@media (min-width: 1000px) {
+  .contact-mail {
+    font-size: 1.1rem;
+  }
+}
+
 @media (min-width: 1600px) {
   .contact-mail {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 
